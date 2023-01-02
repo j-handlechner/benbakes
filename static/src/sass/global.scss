@@ -1,0 +1,9 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.super-headline {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $dark-gray;
+}
