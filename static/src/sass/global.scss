@@ -1,13 +1,11 @@
 *, *:after, *:before {
   box-sizing: border-box;
+  font-family: 'Josefin sans';
+  text-transform: uppercase;
 }
 
 .super-headline {
   text-transform: uppercase;
   font-weight: 700;
   color: $dark-brown;
-}
-
-h1 {
-  font-family: 'Josefin Sans';
 }

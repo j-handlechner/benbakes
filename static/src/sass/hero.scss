@@ -1,0 +1,48 @@
+.hero-lines:before {
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: black;
+}
+
+.hero-lines:after {
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: black;
+}
+
+.hero-lines{
+    font-family: 'Josefin sans';
+    position: relative;
+    max-width: 500px;
+    margin-top: 125px;
+    margin-bottom: calc($spacer-medium-desktop - 25px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Josefin sans';
+    font-size: 100px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+header{
+    p{
+        font-family: 'Josefin sans';
+        text-align: center;
+        margin-top: calc($spacer-medium-desktop - 25px);
+        margin-bottom: 250px;
+    }
+}
