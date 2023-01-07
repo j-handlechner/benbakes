@@ -5,9 +5,11 @@
         a {
             font-family: 'Josefin sans';
             font-size: 14px;
-            letter-spacing: 0.2em;
+            font-weight: $lightweight;
+            letter-spacing: $small-spacing;
             text-decoration: none;
             margin: 0 25px;
+            color: white;
         }
     }
 }
