@@ -3,6 +3,7 @@
     li {
         display: inline;
         a {
+            position: relative;
             font-family: 'Josefin sans';
             font-size: 14px;
             font-weight: $lightweight;
@@ -14,14 +15,14 @@
         a::after{
             content: '';
             position: absolute;
-            width: 100%;
+            width: 98%;
             transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
+            height: 1px;
+            bottom: -10%;
             left: 0;
-            background-color: #ffff00;
+            background-color: white;
             transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
+            transition: transform 0.314s ease-out;
         }
         a:hover::after{
             transform: scaleX(1);
