@@ -1,0 +1,56 @@
+#philosophy{
+    height: 100%;
+}
+
+.philosophy-container{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: repeat(2, 50vh);
+    gap: 10px;
+    .tasty-treat-text{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: $blue;
+        color: white;
+        padding: 15px;
+        h3{
+            font-size: $h3;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        p{
+            text-transform: none;
+            line-height: 1.2em;
+            font-weight: $lightweight;
+        }
+    }
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url(../images/bb-pic-segment-bread.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url(../images/bb-pic-segment-glass-domes.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pic3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url(../images/bb-pic-segment-wall.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
