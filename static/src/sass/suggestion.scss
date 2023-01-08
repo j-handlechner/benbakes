@@ -1,5 +1,5 @@
 #suggestion {
-    padding: $section-padding-desktop;
+    padding: $section-padding-desktop calc($section-padding-desktop + 70px);
     height: 100vh;
 }
 
@@ -31,12 +31,12 @@
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
-    padding-left: 70px;
+    padding-left: 20px;
     letter-spacing: 0.18em;
     background-image: url(../images/bb-light-brown-blob.png);
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 70% 50%;
 }
 
 .column2{
@@ -45,7 +45,7 @@
     text-align: center;
     letter-spacing: $medium-spacing;
     background-image: url(../images/bb-brown-blob.png);
-    background-size: 75%;
+    background-size: 55%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -54,11 +54,11 @@
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
-    padding-right: 70px;
+    padding-right: 20px;
     background-image: url(../images/bb-green-blob.png);
     background-size: 95%;
     background-repeat: no-repeat;
-    background-position: -250% 65%;
+    background-position: -100% 55%;
 }
 
 .bot-row{
