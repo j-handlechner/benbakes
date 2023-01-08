@@ -35,7 +35,7 @@
 h1 {
     font-family: 'Josefin sans';
     font-size: 100px;
-    letter-spacing: $small-spacing;
+    letter-spacing: $medium-spacing;
     text-align: center;
     padding-top: 25px;
     color: white;
@@ -51,7 +51,7 @@ header{
         font-family: 'Josefin sans';
         font-weight: $lightweight;
         text-align: center;
-        letter-spacing: $small-spacing;
+        letter-spacing: $medium-spacing;
         line-height: 2em;
         margin-top: calc($spacer-medium-desktop - 25px);
         margin-bottom: 250px;

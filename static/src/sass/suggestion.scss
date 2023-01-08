@@ -1,36 +1,64 @@
 #suggestion {
-    padding: $section-padding-desktop 
+    padding: $section-padding-desktop;
+    height: 100vh;
 }
 
 .suggestion-container{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-
+    border: solid 1px $blue;
+    line-height: 1.6em;
+    color: $blue;
 }
 
 .top-row{
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
+    font-size: $h2;
+    padding-bottom: 1em;
+    h2 {
+        padding-bottom: 0.5em;
+        translate: 0 -10px;
+        background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .column1{
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
+    padding-left: 70px;
+    letter-spacing: 0.18em;
+    background-image: url(../images/bb-light-brown-blob.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
 }
 
 .column2{
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
+    letter-spacing: $medium-spacing;
+    background-image: url(../images/bb-brown-blob.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .column3{
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
+    padding-right: 70px;
+    background-image: url(../images/bb-green-blob.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: -250% 65%;
 }
 
 .bot-row{
@@ -39,4 +67,39 @@
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
+    padding-top: 1em;
+}
+
+.suggestion-container ul li:first-child{
+    font-size: 16px;
+    letter-spacing: $medium-spacing;
+}
+
+.suggestion-container ul li:nth-child(2){
+    font-size: 12px;
+    font-weight: $lightweight;
+    letter-spacing: 0.18em;
+}
+
+.suggestion-container ul li:nth-child(3){
+    font-size: 14px;
+    padding-bottom: 0.8em;
+    letter-spacing: $medium-spacing;
+}
+
+.suggestion-container {
+    h3{
+        font-size: $h3;
+        letter-spacing: $large-spacing;
+        padding-bottom: 0.85em;
+    }
+    button{
+        translate: 0 20px;
+        border-left: solid 50px white;
+        border-right: solid 50px white;
+    }
+}
+
+.EBM {
+    line-height: 1.2em;
 }

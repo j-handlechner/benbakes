@@ -11,7 +11,7 @@ $green: #7E8C49;
 
 // PADDINGS
 //DESKTOP
-$section-padding-desktop: 140px;
+$section-padding-desktop: 80px;
 $side-padding-desktop: 300px;
 
 $spacer-large-desktop: 90px;
@@ -27,8 +27,13 @@ $spacer-medium-mobile: 50px;
 $spacer-small-mobile: 25px;
 
 //LETTER SPACING
-$small-spacing: 0.2em;
+$medium-spacing: 0.2em;
+$large-spacing: 0.25em;
 
 //FONT WEIGHTS
 $lightweight: 300;
 $mediumweight: 400;
+
+//FONT SIZES
+$h2: 45px;
+$h3: 30px;
