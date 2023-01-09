@@ -18,11 +18,11 @@
             width: 98%;
             transform: scaleX(0);
             height: 1px;
-            bottom: -10%;
+            bottom: -15%;
             left: 0;
             background-color: white;
             transform-origin: bottom right;
-            transition: transform 0.314s ease-out;
+            transition: transform 0.3141s ease-out;
         }
         a:hover::after{
             transform: scaleX(1);
