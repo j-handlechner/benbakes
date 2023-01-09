@@ -1,5 +1,6 @@
-.navbar-container {
+ul {
     text-align: center;
+    padding-top: 25px;
     li {
         display: inline;
         a {
@@ -28,5 +29,11 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    body{
+        //overflow-x: hidden;
     }
 }

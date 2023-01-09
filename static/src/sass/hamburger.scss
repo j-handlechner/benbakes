@@ -1,0 +1,48 @@
+@include breakpoint($desktop) {
+    #hamburger{
+        display:none;
+    }
+}
+
+
+@include breakpoint(0, $mobile) {
+
+    #hamburger {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        border: none;
+        background-color: transparent;
+        z-index: 10;
+        padding: 0;
+
+        [class^=line-] {
+            background-color: white;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            display: block;
+
+            transition: 0.2s ease-in-out;
+        }
+    
+        &:hover {
+            cursor: pointer;
+        }
+
+        .line-1 {
+            top: 0;
+        }
+
+        .line-2 {
+            top: 8px;
+            right: 0;
+        }
+        .line-3 {
+            top: 16px;
+            right: 0;
+        }
+    }
+}
