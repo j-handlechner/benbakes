@@ -1,10 +1,14 @@
+@include breakpoint($desktop) {
+    #suggestion {
+        img{
+            display: none;
+        }
+    }
+}
+
 #suggestion {
     padding: $section-padding-desktop calc($section-padding-desktop + 70px);
     height: 100%;
-    
-    img{
-        display: none;
-    }
 }
 
 .suggestion-container{
@@ -172,6 +176,11 @@
         img{
             position: absolute;
             margin-top: 89%;
+            z-index: 19;
+        }
+
+        img:hover{
+            cursor: pointer;
         }
 
         img:nth-of-type(2){
