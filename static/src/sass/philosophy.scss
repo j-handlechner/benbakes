@@ -54,3 +54,39 @@
         background-repeat: no-repeat;
     }
 }
+
+@include breakpoint(0, $mobile) {
+    .philosophy-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px auto;
+        gap: 0px;
+
+        .tasty-treat-text{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin-top: 0px;
+            height: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 55px;
+        }
+        .pic1{
+            display:none;
+        }
+        .pic2{
+            display:none;
+        }
+        .pic3{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(../images/bb-pic-segment-wall.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h3{
+            font-size: $h3-mobile;
+        }
+    }
+
+}
