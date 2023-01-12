@@ -171,16 +171,37 @@
 @include breakpoint(0, $mobile) {
     #suggestion{
         padding: $section-padding-mobile $side-padding-mobile;
+        position: relative;
         height: auto;
 
-        img{
+        .left-arrow{
+            display: flex;
+            flex-direction: row;
             position: absolute;
-            margin-top: 89%;
-            z-index: 19;
+            height: 100%;
+            width:25px;
+            left: 0;
+            align-items: center;
+            padding-left: 10px;
+
+            img{
+                z-index: 19;
+            }
         }
 
-        img:hover{
-            cursor: pointer;
+        .right-arrow{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: 100%;
+            width:25px;
+            right: 0;
+            align-items: center;
+            padding-right: 10px;
+
+            img{
+                z-index: 19;
+            }
         }
 
         img:nth-of-type(2){
@@ -204,7 +225,6 @@
 
         .suggestion-container {
             grid-template-columns: repeat(3, 100%);
-            grid-template-rows: repeat(5, auto);
             border: none;
             height: auto;
 
@@ -232,11 +252,11 @@
 
         .suggestion-button-container{
             button{
-                margin-top: 150px;
+                margin-top: 100px;
             }
             .vertical-line-bot {
                 border-left: 1px solid $blue;
-                height: 150px;
+                height: 100px;
                 position: absolute;
                 left: 50%;
                 margin-left: -3px;
@@ -247,5 +267,36 @@
         .column1{
             padding-right: 20px;
         }
+
+        .column3{
+            padding-left: 20px;
+        }
     }
 }
+
+
+// .left-arrow{
+//     grid-column-start: 4;
+//     grid-column-end: 5;
+//     grid-row-start: 2;
+//     grid-row-end: 3;
+//     position: absolut;
+//     height: 100%;
+//     width:15px;
+//     img{
+//         z-index: 19;
+//     }
+// }
+
+// .right-arrow{
+//     grid-column-start: 5;
+//     grid-column-end: 6;
+//     grid-row-start: 2;
+//     grid-row-end: 3;
+//     position: absolut;
+//     height: 100%;
+//     width:15px;
+//     img{
+//         z-index: 19;
+//     }
+// }
