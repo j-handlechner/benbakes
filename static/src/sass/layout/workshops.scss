@@ -11,7 +11,7 @@
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
         transform: translateY(-$h2 * 1.5 - $spacer-small-desktop);
-        height: 600px;
+        height: 520px;
         object-fit: cover;
     }
 
@@ -35,7 +35,7 @@
             text-transform: none;
             font-weight: 300;
             padding-bottom: $spacer-small-desktop;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 150%;
             color: $blue;
 

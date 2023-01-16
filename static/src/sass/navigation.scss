@@ -1,36 +1,39 @@
-ul {
-    text-align: center;
-    padding-top: 25px;
-    li {
-        display: inline;
-        a {
-            position: relative;
-            font-family: 'Josefin sans';
-            font-size: 14px;
-            font-weight: $lightweight;
-            letter-spacing: $medium-spacing;
-            text-decoration: none;
-            margin: 0 25px;
-            color: white;
-        }
-        a::after{
-            content: '';
-            position: absolute;
-            width: 98%;
-            transform: scaleX(0);
-            height: 1px;
-            bottom: -15%;
-            left: 0;
-            background-color: white;
-            transform-origin: bottom right;
-            transition: transform 0.3141s ease-out;
-        }
-        a:hover::after{
-            transform: scaleX(1);
-            transform-origin: bottom left;
+nav {
+    ul {
+        text-align: center;
+        padding-top: 25px;
+        li {
+            display: inline;
+            a {
+                position: relative;
+                font-family: 'Josefin sans';
+                font-size: 14px;
+                font-weight: $lightweight;
+                letter-spacing: $medium-spacing;
+                text-decoration: none;
+                margin: 0 25px;
+                color: white;
+            }
+            a::after{
+                content: '';
+                position: absolute;
+                width: 98%;
+                transform: scaleX(0);
+                height: 1px;
+                bottom: -15%;
+                left: 0;
+                background-color: white;
+                transform-origin: bottom right;
+                transition: transform 0.3141s ease-out;
+            }
+            a:hover::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
         }
     }
 }
+
 
 @include breakpoint(0, $mobile) {
     body{

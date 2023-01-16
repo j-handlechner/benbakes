@@ -1,0 +1,129 @@
+#jobs {    
+    width: 100%;
+    padding: $section-padding-desktop $side-padding-desktop;
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-brown;
+    column-gap: $spacer-small-desktop;
+
+    .left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top {
+            h2 {
+                text-transform: uppercase;
+                font-size: $h2;
+                color: white;
+                width: 60%;
+                line-height: 135%;
+            }
+        
+            p {
+
+                &.subtitle {
+                    text-transform: uppercase;
+                    color: white;
+            
+                    font-weight: 300;
+                    font-size: $body-medium;
+
+                    padding-top: $spacer-small-desktop;
+                }
+            }
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 60%;
+            min-width: fit-content;
+            padding: $spacer-small-desktop;
+            align-items: flex-end;
+
+            border: 1px solid $light-brown;
+
+            text-decoration: none;
+
+            margin-top: $spacer-large-desktop;
+
+            svg {
+                width: 40px;
+            }
+
+            p {
+                text-decoration: none;
+                color: $light-brown;
+                font-size: 16px;
+
+                &.big {
+                    font-size: $body-medium;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        padding: $spacer-small-desktop 0;
+
+        article {
+            display: flex;
+            padding: $spacer-small-desktop 0;
+            align-items: center;
+            justify-content: space-between;
+
+            .text-content {
+                p {
+                    font-size: 18px;
+                    color: white;
+                    width: 70%;
+                    line-height: 150%;
+
+                    &.job-title {
+                        font-size: $body-large;
+                    }
+                }
+    
+                ul {
+                    padding-top: 15px;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    column-gap: 10px;
+    
+                    li {
+                        font-size: 18px;
+                        line-height: 100%;
+                        color: white;
+                    }
+    
+                    .seperator {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 100%;
+                        background-color: white;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+
+            svg {
+                width: 40px;
+                margin-right: $spacer-small-desktop;
+            }            
+        }
+
+        .seperator {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+    }
+}
