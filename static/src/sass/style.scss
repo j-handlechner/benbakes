@@ -3,14 +3,12 @@
 @import "fonts";
 @import "base";
 @import "global";
-@import "navigation";
-@import "hero";
-@import "suggestion";
-@import "philosophy";
-@import "hamburger";
-@import "mobile-nav";
-//@import "mainnav";
-//@import "mainnav-mobile";
-//@import "layout/footer";
 
+@import "navigation";
+@import "./layout/hero";
+@import "./layout/suggestion";
+@import "./layout/philosophy";
+@import "hamburger";
+
+@import "mobile-nav";
 @import "button";
