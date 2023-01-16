@@ -42,6 +42,32 @@
                 font-size: $body-large;
                 // width: 80%;
             }
+
+            svg {
+                margin-top: $spacer-small-desktop;
+                width: 40px;
+            }
+
+            svg:hover {
+                animation-name: arrow-bounce;
+                animation-duration: 0.75s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+
+                cursor: pointer;
+            }
+
+            @keyframes arrow-bounce {
+                0% {
+                    transform: translateX(0%);
+                }
+
+                100% {
+                    transform: translateX(25%);
+                }
+            }
+
             img {
                 width: 150px;
                 position: absolute;
