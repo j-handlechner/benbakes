@@ -1,0 +1,59 @@
+#energy {
+    width: 100%;
+    padding-left: $side-padding-desktop;
+    padding-right: $side-padding-desktop;
+    padding-top: $section-padding-desktop;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    article {
+        
+        &.left {
+            width: 55%;
+
+            p {
+                margin-top: $spacer-medium-desktop;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }            
+        }
+
+        &.right {
+            width: 40%;
+        }
+
+        min-width: 200px;
+
+        padding: $spacer-large-desktop $spacer-medium-desktop;
+        
+        p {
+            line-height: 150%;
+
+            letter-spacing: 12px;
+            color: $green;
+            font-size: $body-largest;
+        }
+
+        &.bordered {
+            border: solid 2px $green;
+            position: relative;
+
+            p {
+                color: $green;
+                font-weight: 500;
+                font-size: $body-large;
+                // width: 80%;
+            }
+            img {
+                width: 150px;
+                position: absolute;
+                bottom: -2.2px;
+                right: 50px;
+            }
+        }
+    }
+}

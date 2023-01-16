@@ -7,7 +7,7 @@
 }
 
 #suggestion {
-    padding: $section-padding-desktop calc($section-padding-desktop + 70px);
+    padding: $section-padding-desktop calc($section-padding-desktop + 70px); // ? wieso hier nicht $side-padding-desktop?
     height: 100%;
 }
 
