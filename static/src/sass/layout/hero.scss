@@ -9,7 +9,7 @@
     content:" ";
     display: block;
     height: 1px;
-    width: 100px;
+    width: 110px;
     position: absolute;
     top: 50%;
     left: -100%;
@@ -21,7 +21,7 @@
     content:" ";
     display: block;
     height: 1px;
-    width: 8vw;
+    width: 110px;
     position: absolute;
     top: 50%;
     right: -100%;
@@ -39,11 +39,13 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 h1 {
     font-family: 'Josefin sans';
-    font-size: 100px;
+    font-size: 120px;
     letter-spacing: $medium-spacing;
     text-align: center;
     padding-top: 25px;
@@ -65,6 +67,8 @@ header{
         margin-top: calc($spacer-medium-desktop - 25px);
         margin-bottom: 250px;
         color: white;
+        font-size: 20px;
+        font-weight: 400;
     }
 }
 
