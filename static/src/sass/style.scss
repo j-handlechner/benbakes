@@ -3,14 +3,16 @@
 @import "fonts";
 @import "base";
 @import "global";
+
 @import "navigation";
-@import "hero";
-@import "suggestion";
-@import "philosophy";
+@import "./layout/hero";
+@import "./layout/suggestion";
+@import "./layout/philosophy";
+@import "./layout/energy.scss";
+@import "./layout/workshops.scss";
+@import "./layout/jobs.scss";
+@import "./layout/footer.scss";
+
 @import "hamburger";
 @import "mobile-nav";
-//@import "mainnav";
-//@import "mainnav-mobile";
-//@import "layout/footer";
-
 @import "button";

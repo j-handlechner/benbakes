@@ -1,0 +1,74 @@
+#workshops {
+    width: 100%;
+    padding: $section-padding-desktop $side-padding-desktop;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: $spacer-small-desktop;
+
+    
+    img {
+        width: 100%;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        transform: translateY(-$h2 * 1.5 - $spacer-small-desktop);
+        height: 520px;
+        object-fit: cover;
+    }
+
+    h2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        text-transform: uppercase;
+        color: $medium-brown;
+        font-size: $h2;
+        width: 60%;
+        padding-bottom: $spacer-small-desktop;
+        line-height: 135%;
+    }
+
+    .text-content {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+
+        p {
+            width: 80%;
+            text-transform: none;
+            font-weight: 300;
+            padding-bottom: $spacer-small-desktop;
+            font-size: 18px;
+            line-height: 150%;
+            color: $blue;
+
+            &.subtitle {
+                padding-top: $spacer-small-desktop + 5px;
+                padding-bottom: $spacer-small-desktop;
+                color: white;
+                text-transform: uppercase;
+                font-size: $h3;
+                line-height: 135%;
+                font-weight: 500;
+            }
+        }
+
+        button {
+            margin-bottom: $spacer-small-desktop * 1.5;
+            transition: 0.35s ease-in-out background-color, 0.35s ease-in-out border, 0.35s ease-in-out color;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: $hoverBlue;
+        }
+
+    }
+
+    .background-rect {
+        background-color: $background-brown;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        width: 75%;
+        height: 100%;
+        justify-self: end;
+        z-index: -1;
+    }
+}
