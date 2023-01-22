@@ -272,6 +272,37 @@ header p {
     margin-top: 0;
   }
 }
+@media (min-width: 33.125rem) and (max-width: 49.9375rem) {
+  .hero-lines:before {
+    left: -70%;
+  }
+  .hero-lines:after {
+    right: -70%;
+  }
+  .hero-lines {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-container p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 0rem) and (max-width: 33.125rem) {
+  .hero-lines:before {
+    left: -85%;
+  }
+  .hero-lines:after {
+    right: -85%;
+  }
+  .hero-lines {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-container p {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 50rem) {
   #suggestion img {
     display: none;
@@ -527,6 +558,37 @@ header p {
     padding-left: 20px;
   }
 }
+@media (min-width: 57.5rem) and (max-width: 66.875rem) {
+  .suggestion-container h3 {
+    font-size: 26px;
+  }
+  .suggestion-container ul li:first-child {
+    font-size: 16px;
+  }
+  .suggestion-container ul li:nth-child(2) {
+    font-size: 12px;
+  }
+  .suggestion-container ul li:nth-child(3) {
+    font-size: 14px;
+  }
+}
+@media (min-width: 49.9375rem) and (max-width: 57.5rem) {
+  .suggestion-container h3 {
+    font-size: 22px;
+  }
+  .suggestion-container ul li:first-child {
+    font-size: 14px;
+  }
+  .suggestion-container ul li:nth-child(2) {
+    font-size: 10px;
+  }
+  .suggestion-container ul li:nth-child(3) {
+    font-size: 12px;
+  }
+  .suggestion-header-container h2 {
+    font-size: 38px;
+  }
+}
 #philosophy {
   height: 100%;
 }
@@ -534,7 +596,7 @@ header p {
 .philosophy-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: repeat(2, 50vh);
+  grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
 .philosophy-container .tasty-treat-text {
@@ -684,6 +746,58 @@ header p {
   right: 50px;
 }
 
+@media (min-width: 0rem) and (max-width: 49.9375rem) {
+  #energy {
+    padding: 50px 25px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #energy article {
+    min-width: 100px;
+    padding: 0;
+  }
+  #energy article.left p {
+    font-size: 28px;
+  }
+  #energy article.right {
+    width: 100%;
+    padding: 30px;
+    margin-top: 45px;
+  }
+  #energy article.right p {
+    font-size: 21.5px;
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 49.9375rem) and (max-width: 71.875rem) {
+  #energy {
+    padding: 50px 25px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #energy article {
+    width: 100%;
+    padding: 0;
+  }
+  #energy article.left {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #energy article.left p {
+    font-size: 28px;
+  }
+  #energy article.right {
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px;
+    margin-top: 45px;
+  }
+  #energy article.right p {
+    font-size: 21.5px;
+    margin-bottom: 45px;
+  }
+}
+
 #workshops {
   width: 100%;
   padding: 80px 150px;
@@ -747,6 +861,116 @@ header p {
   height: 100%;
   justify-self: end;
   z-index: -1;
+}
+
+@media (min-width: 0rem) and (max-width: 49.9375rem) {
+  #workshops {
+    width: 100%;
+    padding: 25px 25px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  #workshops h2 {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 22.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 28px;
+    color: white;
+  }
+  #workshops .text-content {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #workshops .text-content p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    width: 100%;
+  }
+  #workshops .text-content p.subtitle {
+    font-size: 21.5px;
+  }
+  #workshops .text-content button {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #workshops img {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    transform: none;
+    width: 100%;
+  }
+  #workshops .background-rect {
+    background-color: rgba(217, 176, 126, 0.5019607843);
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+    width: 100%;
+    z-index: -1;
+  }
+}
+@media (min-width: 49.9375rem) and (max-width: 59.375rem) {
+  #workshops {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 25px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  #workshops h2 {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 22.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 28px;
+    color: white;
+  }
+  #workshops .text-content {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #workshops .text-content p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    width: 100%;
+  }
+  #workshops .text-content p.subtitle {
+    font-size: 21.5px;
+  }
+  #workshops .text-content button {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #workshops img {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    transform: none;
+    width: 100%;
+  }
+  #workshops .background-rect {
+    background-color: rgba(217, 176, 126, 0.5019607843);
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 #jobs {
@@ -848,6 +1072,195 @@ header p {
   width: 100%;
   height: 1px;
   background-color: white;
+}
+
+@media (min-width: 0rem) and (max-width: 49.9375rem) {
+  #jobs {
+    padding: 25px 25px;
+    flex-direction: column;
+    column-gap: 0;
+    display: grid;
+  }
+  #jobs .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #jobs .left .top h2 {
+    font-size: 28px;
+    width: 100%;
+    padding-top: 25px;
+  }
+  #jobs .left .top p.subtitle {
+    font-size: 21.5px;
+    padding-top: 15px;
+  }
+  #jobs .left .button-wrapper {
+    width: 100%;
+    min-width: fit-content;
+    padding: 30px;
+    align-items: flex-end;
+    margin: 0 auto;
+    border: 1px solid #E2C49F;
+    text-decoration: none;
+    margin-top: 45px;
+  }
+  #jobs .left .button-wrapper svg {
+    width: 40px;
+  }
+  #jobs .left .button-wrapper p {
+    text-decoration: none;
+    color: #E2C49F;
+    font-size: 16px;
+  }
+  #jobs .left .button-wrapper p.big {
+    font-size: 22px;
+    padding-top: 12px;
+  }
+  #jobs .right {
+    width: 100%;
+    padding: 30px 0;
+  }
+  #jobs .right article {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #jobs .right article .text-content p {
+    font-size: 12px;
+    color: white;
+    width: 70%;
+    line-height: 150%;
+  }
+  #jobs .right article .text-content p.job-title {
+    font-size: 21.5px;
+  }
+  #jobs .right article .text-content ul {
+    padding-top: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+  #jobs .right article .text-content ul li {
+    font-size: 15px;
+    line-height: 100%;
+    color: white;
+  }
+  #jobs .right article .text-content ul .seperator {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translateY(-2px);
+  }
+  #jobs .right article svg {
+    width: 40px;
+    margin-right: 30px;
+  }
+  #jobs .right .seperator {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+}
+@media (min-width: 49.9375rem) and (max-width: 62.5rem) {
+  #jobs {
+    padding: 25px 25px;
+    flex-direction: column;
+    column-gap: 0;
+    display: grid;
+  }
+  #jobs .left {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #jobs .left .top h2 {
+    font-size: 28px;
+    width: 100%;
+    padding-top: 25px;
+  }
+  #jobs .left .top p.subtitle {
+    font-size: 21.5px;
+    padding-top: 15px;
+  }
+  #jobs .left .button-wrapper {
+    width: 100%;
+    min-width: fit-content;
+    padding: 30px;
+    align-items: flex-end;
+    margin: 0 auto;
+    border: 1px solid #E2C49F;
+    text-decoration: none;
+    margin-top: 45px;
+  }
+  #jobs .left .button-wrapper svg {
+    width: 40px;
+  }
+  #jobs .left .button-wrapper p {
+    text-decoration: none;
+    color: #E2C49F;
+    font-size: 16px;
+  }
+  #jobs .left .button-wrapper p.big {
+    font-size: 22px;
+    padding-top: 12px;
+  }
+  #jobs .right {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  #jobs .right article {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #jobs .right article .text-content p {
+    font-size: 12px;
+    color: white;
+    width: 70%;
+    line-height: 150%;
+  }
+  #jobs .right article .text-content p.job-title {
+    font-size: 21.5px;
+  }
+  #jobs .right article .text-content ul {
+    padding-top: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+  #jobs .right article .text-content ul li {
+    font-size: 15px;
+    line-height: 100%;
+    color: white;
+  }
+  #jobs .right article .text-content ul .seperator {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translateY(-2px);
+  }
+  #jobs .right article svg {
+    width: 40px;
+    margin-right: 30px;
+  }
+  #jobs .right .seperator {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
 }
 
 footer {
