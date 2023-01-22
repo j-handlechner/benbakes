@@ -303,3 +303,44 @@
         }
     }
 }
+
+@include breakpoint(920, 1070){
+    .suggestion-container{
+        h3{
+            font-size: 26px;
+        }
+        ul li:first-child{
+            font-size: 16px;
+        }
+    
+        ul li:nth-child(2){
+            font-size: 12px;
+        }
+    
+        ul li:nth-child(3){
+            font-size: 14px;
+        }
+    }
+}
+
+@include breakpoint($mobile, 920){
+    .suggestion-container{
+        h3{
+            font-size: 22px;
+        }
+        ul li:first-child{
+            font-size: 14px;
+        }
+    
+        ul li:nth-child(2){
+            font-size: 10px;
+        }
+    
+        ul li:nth-child(3){
+            font-size: 12px;
+        }
+    }
+    .suggestion-header-container h2{
+            font-size: 38px;
+    }
+}

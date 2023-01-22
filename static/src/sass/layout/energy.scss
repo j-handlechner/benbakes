@@ -77,3 +77,65 @@
         }
     }
 }
+
+@include breakpoint(0, $mobile) {
+    #energy {
+        padding: $section-padding-mobile*2 $side-padding-mobile;
+        flex-direction: column;
+        justify-content: space-between;
+
+        article {
+            min-width: 100px;
+            padding: 0;
+
+            &.left p {
+                font-size: $h2-mobile;
+            }
+
+            &.right {
+                width: 100%;
+                padding: $spacer-medium-mobile;
+                margin-top: $spacer-large-mobile;
+
+                p {
+                    font-size: $body-large-mobile;
+                    margin-bottom: $spacer-large-mobile;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint($mobile, 1150) {
+    #energy {
+        padding: $section-padding-mobile*2 $side-padding-mobile;
+        flex-direction: column;
+        justify-content: space-between;
+
+        article {
+            width: 100%;
+            padding: 0;
+
+            &.left {
+                margin: 0 auto;
+                width: 80%;
+                p {
+                    font-size: $h2-mobile;
+                }
+            }
+
+            &.right {
+                margin: 0 auto;
+                width: 80%;
+
+                padding: $spacer-medium-mobile;
+                margin-top: $spacer-large-mobile;
+
+                p {
+                    font-size: $body-large-mobile;
+                    margin-bottom: $spacer-large-mobile;
+                }
+            }
+        }
+    }
+}

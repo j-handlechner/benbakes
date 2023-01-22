@@ -5,7 +5,7 @@
 .philosophy-container{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 50vh);
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
     .tasty-treat-text{
         grid-column-start: 2;
@@ -90,5 +90,4 @@
             font-size: $h3-mobile;
         }
     }
-
 }
