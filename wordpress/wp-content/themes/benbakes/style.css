@@ -1336,7 +1336,20 @@ footer ul li a {
   }
 }
 @media (min-width: 0rem) and (max-width: 49.9375rem) {
-  #hamburger + ul {
+  #hamburger {
+    z-index: 11;
+  }
+  #hamburger + div {
+    transform: translateX(100%);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  #hamburger + div.transition {
+    transition: 0.5s ease-in-out transform;
+  }
+  #hamburger + div > ul {
     text-align: center;
     position: absolute;
     width: 100vw;
@@ -1349,20 +1362,16 @@ footer ul li a {
     justify-content: end;
     padding-bottom: 50px;
     background-color: #313C55;
-    transform: translateX(100%);
   }
-  #hamburger + ul li {
+  #hamburger + div > ul li {
     margin-top: 40px;
     font-weight: 400;
   }
-  #hamburger + ul li a {
+  #hamburger + div > ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.45rem;
     display: inline;
-  }
-  #hamburger + ul.transition {
-    transition: 0.5s ease-in-out transform;
   }
   #hamburger.opened .line-1 {
     transform-origin: center left;
@@ -1378,7 +1387,7 @@ footer ul li a {
   #hamburger.opened .line-3 {
     display: none;
   }
-  #hamburger.opened + ul {
+  #hamburger.opened + div {
     transform: translateX(0%);
   }
   body {

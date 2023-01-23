@@ -11,7 +11,6 @@
             </footer>
         </div>
         
-        <script src='<?= get_template_directory_uri() ?>/main.js'></script>
         <?php wp_footer(); ?>
 </body>
 

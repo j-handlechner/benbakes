@@ -1,1 +1,69 @@
-(()=>{var s=document.getElementById("hamburger");s.addEventListener("click",()=>{s.classList=="closed"?(s.classList.remove("closed"),s.classList.add("opened")):(s.classList.remove("opened"),s.classList.add("closed"))});var d=document.querySelectorAll("#hamburger + ul li a");for(let c of d)c.addEventListener("click",i=>{s.classList.remove("opened"),s.classList.add("closed")});document.querySelector("nav > ul").classList.add("transition");var a=document.getElementById("left_slider"),l=document.getElementById("right_slider"),e=document.getElementById("slidable-container"),t=0;l.addEventListener("click",()=>{switch(t%3){case 0:a.classList.remove("left-disappear"),a.classList.add("left-appear"),e.classList.contains("state2")&&e.classList.remove("state2"),e.classList.add("state0"),t++;break;case 1:l.classList.remove("right-appear"),l.classList.add("right-disappear"),e.classList.remove("state0"),e.classList.add("state1"),t++;break}});a.addEventListener("click",()=>{switch(t%3){case 1:a.classList.remove("left-appear"),a.classList.add("left-disappear"),e.classList.remove("state0"),e.classList.add("state2"),t--;break;case 2:l.classList.remove("right_disappear"),l.classList.add("right-appear"),e.classList.remove("state1"),e.classList.add("state0"),t--;break}});})();
+window.addEventListener("load", () => {
+    const btn = document.getElementById("hamburger")
+
+    btn.addEventListener("click", () => {
+        if(btn.classList == "closed") {
+            btn.classList.remove("closed");
+            btn.classList.add("opened");
+        }
+        else {
+            btn.classList.remove("opened");
+            btn.classList.add("closed");
+        }
+    })
+    
+    // for closing the expaneded nav when clicking on a link
+    const navElements = document.querySelectorAll("#hamburger + div ul li a")
+    for(let el of navElements) {
+        el.addEventListener("click", (e) => {
+            btn.classList.remove("opened");
+            btn.classList.add("closed");
+        })
+    }
+    
+    document.querySelector("nav > div").classList.add("transition")
+    
+    const slider_left = document.getElementById("left_slider")
+    const slider_right = document.getElementById("right_slider")
+    const container = document.getElementById("slidable-container")
+    
+    let counter = 0
+    
+    slider_right.addEventListener("click", () => {
+        switch(counter%3){
+            case 0:
+                slider_left.classList.remove("left-disappear")
+                slider_left.classList.add("left-appear")
+                if(container.classList.contains("state2")){container.classList.remove("state2")}
+                container.classList.add("state0")
+                counter++
+                break
+            case 1: 
+                slider_right.classList.remove("right-appear")
+                slider_right.classList.add("right-disappear")
+                container.classList.remove("state0")
+                container.classList.add("state1")
+                counter++
+                break
+        }
+    })
+    
+    slider_left.addEventListener("click", () => {
+        switch(counter%3){
+            case 1: 
+                slider_left.classList.remove("left-appear")
+                slider_left.classList.add("left-disappear")
+                container.classList.remove("state0")
+                container.classList.add("state2")
+                counter--
+                break
+            case 2:
+                slider_right.classList.remove("right_disappear")
+                slider_right.classList.add("right-appear")
+                container.classList.remove("state1")
+                container.classList.add("state0")
+                counter--
+                break
+        }
+    })
+});
