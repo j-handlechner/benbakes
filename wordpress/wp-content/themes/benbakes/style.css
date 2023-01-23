@@ -1294,6 +1294,11 @@ footer ul li a {
   width: 100%;
   display: block;
 }
+@media (min-width: 0rem) and (max-width: 49.9375rem) {
+  footer {
+    padding: 50px;
+  }
+}
 
 @media (min-width: 50rem) {
   #hamburger {

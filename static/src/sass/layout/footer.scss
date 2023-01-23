@@ -36,3 +36,9 @@ footer {
         }
     }
 }
+
+@include breakpoint(0, $mobile) {
+    footer {
+        padding: $section-padding-mobile * 2;
+    }
+}
