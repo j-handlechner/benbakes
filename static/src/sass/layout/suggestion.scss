@@ -273,7 +273,7 @@
                 letter-spacing: 0.18em;
             }
         
-            ul li:nth-child(3){
+            ul li:last-child {
                 font-size: 12px;
                 padding-bottom: 0.8em;
                 letter-spacing: $medium-spacing;
