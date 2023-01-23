@@ -15,57 +15,62 @@
                     <div id="slidable-container" class="suggestion-container">
                         <div class="column1">
                             <h3>Drinks</h3>
-                            <ul>
-                                <li>Espresso</li>
-                                <li>Somalian Arabica</li>
-                                <li>2,40€</li>
-                            </ul>
-                            <ul>
-                                <li>Lungo</li>
-                                <li>Somalian Arabica</li>
-                                <li>3,90€</li>
-                            </ul>
-                            <ul>
-                                <li>Milk Coffee</li>
-                                <li>Indonesian Robusta</li>
-                                <li>4,40€</li>
-                            </ul>
+
+                            <?php
+                                $drinks = new WP_Query(array('category_name' => 'drinks' ));
+                                if( $drinks->have_posts() ) {
+                                    while( $drinks->have_posts() ) {
+                                        $drinks->the_post(); // iterate the post here
+                            ?>
+                                <ul>
+                                    <li><?= the_title(); ?></li>
+                                    <li><?= the_content(); ?></li>
+                                    <li><?= get_post_custom_values('price')[0] ?></li>
+                                </ul>
+                            <?php
+                                    }
+                                }
+                            ?>
+
                         </div>
                         <div class="column2">
                             <h3>Breakfast</h3>
-                            <ul>
-                                <li>Crossaints</li>
-                                <li>Winter Edition</li>
-                                <li>3,70€</li>
-                            </ul>
-                            <ul>
-                                <li class="EBM">English Breakfast<br>Muffins</li>
-                                <li>Make it Veggie</li>
-                                <li>6,40€</li>
-                            </ul>
-                            <ul>
-                                <li>Granola Bowl</li>
-                                <li>Make it Veggie</li>
-                                <li>6,40€</li>
-                            </ul>
+                            
+                            <?php
+                                $drinks = new WP_Query(array('category_name' => 'breakfast' ));
+                                if( $drinks->have_posts() ) {
+                                    while( $drinks->have_posts() ) {
+                                        $drinks->the_post(); // iterate the post here
+                            ?>
+                                <ul>
+                                    <li><?= the_title(); ?></li>
+                                    <li><?= the_content(); ?></li>
+                                    <li><?= get_post_custom_values('price')[0] ?></li>
+                                </ul>
+                            <?php
+                                    }
+                                }
+                            ?>
+
                         </div>
                         <div class="column3">
                             <h3>Lunch</h3>
-                            <ul>
-                                <li>Energy Bowl</li>
-                                <li>With Homemade Bread</li>
-                                <li>8,40€</li>
-                            </ul>
-                            <ul>
-                                <li>Club Sandwich</li>
-                                <li>With Homemade Bread</li>
-                                <li>6,90€</li>
-                            </ul>
-                            <ul>
-                                <li>Hummus Bagle</li>
-                                <li>With Fresh Veggies</li>
-                                <li>6,90€</li>
-                            </ul>
+
+                            <?php
+                                $drinks = new WP_Query(array('category_name' => 'lunch' ));
+                                if( $drinks->have_posts() ) {
+                                    while( $drinks->have_posts() ) {
+                                        $drinks->the_post(); // iterate the post here
+                            ?>
+                                <ul>
+                                    <li><?= the_title(); ?></li>
+                                    <li><?= the_content(); ?></li>
+                                    <li><?= get_post_custom_values('price')[0] ?></li>
+                                </ul>
+                            <?php
+                                    }
+                                }
+                            ?>
                         </div>
                     </div>
 
