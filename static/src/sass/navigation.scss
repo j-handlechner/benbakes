@@ -3,7 +3,9 @@ nav {
         text-align: center;
         padding-top: 25px;
         li {
-            display: inline;
+            display: inline-block;
+            padding-bottom: 15px;
+
             a {
                 position: relative;
                 font-family: 'Josefin sans';

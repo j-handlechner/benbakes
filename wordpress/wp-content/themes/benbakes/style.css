@@ -135,7 +135,8 @@ nav ul {
   padding-top: 25px;
 }
 nav ul li {
-  display: inline;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 nav ul li a {
   position: relative;
