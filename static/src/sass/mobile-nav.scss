@@ -1,6 +1,24 @@
+#hambuger {
+    display: none;
+}
+
 @include breakpoint(0, $mobile) {
     #hamburger {
-        & + ul {
+        z-index: 11;
+
+        & + div {
+            transform: translateX(100%);
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+
+            &.transition {
+                transition: 0.5s ease-in-out transform;
+            }
+        }
+        
+        & + div > ul {
             text-align: center;
             position: absolute;
             width: 100vw;
@@ -16,8 +34,6 @@
 
             background-color: $blue;
 
-            transform: translateX(100%);
-
             li {
                 margin-top:40px;
                 font-weight: $mediumweight;
@@ -28,10 +44,6 @@
                     font-size: 1.45rem;
                     display: inline;
                 }
-            }
-
-            &.transition {
-                transition: 0.5s ease-in-out transform;
             }
         }
 
@@ -53,7 +65,7 @@
                 display: none;
             }
 
-            & + ul {
+            & + div {
                 transform: translateX(0%)
             }
         }
