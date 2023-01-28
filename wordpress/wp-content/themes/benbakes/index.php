@@ -125,8 +125,8 @@
                         <?php   endwhile; 
                             endif;
                         ?>
-                        
-                        <?php 
+
+<?php 
                             $args = array(
                             'name'        => 'philosophy-gallery-right',
                             'post_type'   => 'post',
@@ -262,7 +262,7 @@
                         <p class="subtitle"> <?= get_post_custom_values( 'subheadline' )[0]; ?> </p>
 
                         <?php the_content(); ?>
-                        <button>Book workshops</button>
+                        <a href="/workshops" class="button-link">Book workshops</button>
                     </div>
                     
                     <?php   endwhile; 

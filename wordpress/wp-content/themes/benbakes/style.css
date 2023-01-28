@@ -1520,3 +1520,28 @@ button {
   }
 
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sustainability-page h2, #sustainability-page p {
+  color: #7E8C49;
+}
+
+.button-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #313C55;
+  transition: 0.35s ease-in-out;
+  padding: 15px 30px;
+  padding-top: 18px;
+margin-bottom: 40px;
+display: inline-block;
+}
+
+.button-link:hover {
+  cursor: pointer;
+  background-color: #1d2537;
+}
