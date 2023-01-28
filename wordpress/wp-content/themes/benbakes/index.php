@@ -83,7 +83,7 @@
     
                 <section id="philosophy" class="full-bleed">
                     <div class="philosophy-container">
-                        <img src="<?= get_template_directory_uri() ?>/images/bb-pic-segment-bread.png" class="pic1" alt="Bread on a wooden plate">
+                        <!-- <img src="<?= get_template_directory_uri() ?>/images/bb-pic-segment-bread.png" class="pic1" alt="Bread on a wooden plate"> -->
 
                         <div class="tasty-treat-text">
                             <?php 
@@ -107,6 +107,25 @@
                             ?>
                         </div>
 
+                        <?php 
+                            $args = array(
+                            'name'        => 'philosophy-gallery-left',
+                            'post_type'   => 'post',
+                            'post_status' => 'publish',
+                            'numberposts' => 1
+                            );
+
+                            $philosophyQuery = new WP_Query( $args );
+                            if($philosophyQuery->have_posts()) :
+                                while($philosophyQuery->have_posts()): $philosophyQuery->the_post(); 
+                        ?>
+                        
+                        <?php the_post_thumbnail('full', array('class' => 'pic1')); ?>
+                        
+                        <?php   endwhile; 
+                            endif;
+                        ?>
+                        
                         <img src="<?= get_template_directory_uri() ?>/images/bb-pic-segment-glass-domes.png" class="pic2" alt="Glass domes with cake inside them">
                         <img src="<?= get_template_directory_uri() ?>/images/bb-pic-segment-wall.png" class="pic3" alt="Wall full of bread">
                     </div>     
